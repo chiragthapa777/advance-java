@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>student crud</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>add Student Form</h1>
+        <form method="POST" action="studentcrud">
+            <input type="number" name="id" placeholder="id">
+            <br/>
+            <input type="text" name="name" placeholder="name">
+            <br/>
+            <select name="type">
+                <option value="add" selected>add</option>
+                <option value="edit">edit</option>
+                <option value="delete">delete</option>
+            </select>
+            <br/>
+            <input type="submit" value="submit">
+        </form>
+
+        <a href="studentcrud"> get student</a>
+    </body>
+</html>

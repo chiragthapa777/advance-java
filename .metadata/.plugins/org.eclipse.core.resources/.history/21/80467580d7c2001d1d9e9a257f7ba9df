@@ -1,0 +1,23 @@
+package basics;
+import javax.swing.*;
+import java.awt.FlowLayout;
+
+public class newClass extends JFrame {
+	public static JLabel getLabel(String text, int x , int y) {
+		JLabel l1 = new JLabel(text);
+		return l1;
+	}
+	
+	newClass(){
+		setVisible(true);
+		setTitle("myWindow");
+		setSize(500,500);
+		setDefaultCloseOperation(3);
+		add(this.getLabel("This is label 1", 10, 10));
+		setLayout(new FlowLayout());
+		
+	}
+	public static void main(String args[]) {
+		new newClass();
+	}
+}

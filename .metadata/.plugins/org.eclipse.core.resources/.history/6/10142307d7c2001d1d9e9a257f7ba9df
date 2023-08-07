@@ -1,0 +1,14 @@
+package basics;
+import javax.swing.*;
+
+public class newClass extends JFrame {
+	newClass(){
+		setVisible(true);
+		setTitle("myWindow");
+		setSize(500,500);
+		setDefaultCloseOperation(3);
+	}
+	public static void main(String args[]) {
+		new newClass();
+	}
+}
